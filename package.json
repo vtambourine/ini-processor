@@ -1,0 +1,26 @@
+{
+    "name": "ini-processor",
+    "version": "0.0.0",
+    "author": "Benjamin Tambourine",
+    "description": "Simple ini-files processor made for educational purpose.",
+    "license": "MIT",
+    "main": "lib/configuration",
+    "bin": {
+        "ini-processor": "bin/ini-processor"
+    },
+    "directories": {
+        "doc": "docs",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "dependencies": {
+        "commander": "~2.2.0"
+    },
+    "devDependencies": {
+        "mocha": "~1.20.0",
+        "chai": "~1.9.1"
+    },
+    "private": true
+}

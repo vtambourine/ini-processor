@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var cli = require('../lib/cli');
+
+cli(program);
+
+program
+    .version(require('../package.json').version)
+    .usage('<input file> <output file>')
+    .parse(process.argv);
