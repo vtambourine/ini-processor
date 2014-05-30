@@ -1,0 +1,18 @@
+@startuml
+
+class Parser {
+    - String code
+    + void next()
+}
+
+class Configuration {
+    - Object configuration
+    - void set(String section, String key, {String|Array} value)
+    - void add(String section, String key, {String|Array} value)
+    + void parse(String configuration)
+    + String serialize()
+}
+
+Configuration <-- Parser
+
+@enduml
