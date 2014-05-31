@@ -1,7 +1,6 @@
 @startuml
 
 class Parser {
-    - String data
     + void next()
 }
 
