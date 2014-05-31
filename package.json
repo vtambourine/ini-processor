@@ -4,6 +4,7 @@
     "author": "Benjamin Tambourine",
     "description": "Simple ini-files processor made for educational purpose.",
     "license": "MIT",
+    "git": "https://github.com/vtambourine/ini-processor.git",
     "main": "lib/configuration",
     "bin": {
         "ini-processor": "bin/ini-processor"
