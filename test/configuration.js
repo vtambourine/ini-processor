@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var fs = require('fs');
 var path = require('path');
-var Configuraion = require('../lib/configuration');
+var Configuration = require('../lib/configuration');
 
 var sampleFile = path.resolve(__dirname, 'sample.ini');
 var sampleOutput = fs.readFileSync(path.resolve(__dirname, 'sample.out.ini'), {encoding: 'utf8'});
@@ -19,7 +19,7 @@ describe('Configuration', function () {
     var configuration;
 
     beforeEach(function () {
-        configuration = new Configuraion();
+        configuration = new Configuration();
     });
 
     it('should parse single file', function () {
