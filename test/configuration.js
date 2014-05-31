@@ -38,7 +38,9 @@ describe('Configuration', function () {
     });
 
     it('should parse file with cyclic includes', function () {
-        configuration.add(sampleCyclicIncludeFile);
-        expect(configuration.serialize()).to.equal(sampleCyclicIncludeOutput);
+        var cyclicProcess = function() {
+            configuration.add(sampleCyclicIncludeFile);
+        }
+        expect(cyclicProcess).to.throw(Error, /Cyclic/);
     });
 });
